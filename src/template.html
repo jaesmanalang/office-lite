@@ -4,9 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Office Lite</title>
   </head>
   <body>
-    <h1>Office Lite</h1>
+    <header class="header">
+      <img class="header__bg-pattern" alt="pattern" />
+      <div class="container">
+        <img class="header__logo" alt="Office Lite" />
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__grid">
+            <div class="hero__col hero__content">
+              <h1 class="hero__heading">
+                A simple solution to complex task is coming soon
+              </h1>
+              <p class="hero__text">
+                Say goodbye to inefficient juggling of multiple apps, teams, and
+                projects. Officelite is the new collaboration platform built
+                with an intuitive interface to improve productivity.
+              </p>
+              <a class="btn btn--primary" href="#">Get Started</a>
+            </div>
+            <div class="hero__col hero__img-container">
+              <img class="hero__img" alt="charts" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <div class="container">
+          <div class="pricing__cards">
+            <div class="pricing__card pricing__card--basic">
+              <h4 class="pricing__card-title">Basic</h4>
+              <h1 class="pricing__card-price">Free</h1>
+              <p class="pricing__card-description">Up to 5 users for free</p>
+              <ul class="pricing__card-features">
+                <li class="pricing__card-feature">
+                  Basic document collaboration
+                </li>
+                <li class="pricing__card-feature">2 GB storage</li>
+                <li class="pricing__card-feature">
+                  Great security and support
+                </li>
+              </ul>
+              <a class="btn btn--secondary" href="#">Try for Free</a>
+            </div>
+
+            <div class="pricing__card pricing__card--pro">
+              <!-- <img class="pricing__card-bg" alt="pricing__card-bg" /> -->
+              <h4 class="pricing__card-title">Pro</h4>
+              <h1 class="pricing__card-price">$9.99</h1>
+              <p class="pricing__card-description">Per user, billed monthly</p>
+              <ul class="pricing__card-features">
+                <li class="pricing__card-feature">
+                  All essential integrations
+                </li>
+                <li class="pricing__card-feature">50 GB storage</li>
+                <li class="pricing__card-feature">More control and insights</li>
+              </ul>
+              <a class="btn btn--tertiary" href="#">Try for Free</a>
+            </div>
+
+            <div class="pricing__card pricing__card--ultimate">
+              <h4 class="pricing__card-title">Ultimate</h4>
+              <h1 class="pricing__card-price">$19.99</h1>
+              <p class="pricing__card-description">Per user, billed monthly</p>
+              <ul class="pricing__card-features">
+                <li class="pricing__card-feature">Robust work management</li>
+                <li class="pricing__card-feature">100 GB storage</li>
+                <li class="pricing__card-feature">VIP support</li>
+              </ul>
+              <a class="btn btn--secondary" href="#">Try for Free</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

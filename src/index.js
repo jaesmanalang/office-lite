@@ -1,3 +1,12 @@
+import headerBgPattern from './assets/home/bg-pattern-header.svg';
+import headerLogo from './assets/shared/logo.svg';
+import heroImg from './assets/home/illustration-charts.svg';
+// import pricingCardBg from './assets/home/bg-pattern-pricing.svg';
 import './scss/main.scss';
 
-console.log('test');
+document.querySelector('.header__bg-pattern').src = headerBgPattern;
+document.querySelector('.header__logo').src = headerLogo;
+document.querySelector('.hero__img').src = heroImg;
+// const pricingCardBgPattern = new Image();
+// pricingCardBgPattern.src = pricingCardBg;
+// document.body.appendChild(pricingCardBgPattern);
