@@ -268,6 +268,10 @@ img {
   margin-top: 6.8rem;
   padding-bottom: 10rem;
 
+  &__bg-pattern {
+    display: none;
+  }
+
   &__wrapper {
     position: relative;
     &::before {
@@ -427,7 +431,8 @@ img {
   .footer {
     &__wrapper {
       &::before {
-        background-position: 50% -10%;
+        top: 34%;
+        background-position: 50% -32%;
         background-size: 130rem;
       }
     }
@@ -452,6 +457,121 @@ img {
 
     &__description {
       font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 62em) {
+  .container {
+    max-width: 119rem;
+  }
+
+  .header {
+    padding: 8.1rem 0;
+
+    .container {
+      position: relative;
+    }
+
+    &__bg-pattern {
+      top: -50rem;
+      right: -45rem;
+      max-width: 113rem;
+    }
+  }
+
+  .hero {
+    margin-top: 2.1rem;
+
+    &__img-container {
+      padding-top: 0;
+      max-width: 50%;
+      padding-left: 3.2rem;
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
+    }
+
+    &__content {
+      max-width: 50%;
+      padding-right: 2rem;
+      margin-right: 0;
+    }
+
+    &__heading {
+      font-size: 5.6rem;
+      line-height: 1.14;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+
+  .pricing {
+    &__cards {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    &__card {
+      text-align: center;
+      display: block;
+
+      &--pro {
+        background-position: 50% 105%;
+        background-size: 72rem;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+    }
+
+    .btn.is-tablet {
+      display: none;
+    }
+  }
+
+  .footer {
+    text-align: left;
+    padding-bottom: 9.1rem;
+
+    .container {
+      position: relative;
+    }
+
+    &__bg-pattern {
+      display: block;
+      position: absolute;
+      top: -415%;
+      left: -70%;
+      max-width: 203rem;
+      z-index: -1;
+    }
+
+    &__wrapper {
+      overflow: hidden;
+      &::before {
+        top: 25%;
+        background-image: none;
+      }
+    }
+
+    &__grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .timer {
+    gap: 1.6rem;
+
+    &__card {
+      text-align: center;
     }
   }
 }
