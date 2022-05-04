@@ -308,6 +308,7 @@ img {
 .timer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.3rem;
   margin-bottom: 4rem;
 
@@ -315,7 +316,7 @@ img {
     padding: 1.1rem 1.6rem;
     background-color: var(--dark-blue);
     flex: 1 1 20%;
-    min-width: 20%;
+    max-width: 10rem;
     border-radius: 0.4rem;
     box-shadow: 0 3px 15px rgba(37, 41, 58, 0.25);
   }
@@ -332,5 +333,125 @@ img {
     font-weight: 700;
     color: #999ca7;
     text-transform: lowercase;
+  }
+}
+
+@media (min-width: 43em) {
+  .container {
+    padding: 0 4rem;
+  }
+  .header {
+    padding: 7.2rem 0;
+
+    &__bg-pattern {
+      max-width: 66.6rem;
+      top: -16.4rem;
+      right: -29.3rem;
+      left: auto;
+      transform: none;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+  }
+
+  .hero {
+    text-align: left;
+    margin-top: 3.8rem;
+
+    &__grid {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__content {
+      flex: 1 1 49%;
+      max-width: 49%;
+      order: 1;
+      margin-right: 6.3rem;
+    }
+
+    &__img-container {
+      flex: 1 1 41%;
+      max-width: 41%;
+      order: 2;
+      margin-bottom: 0;
+      padding-top: 4.8rem;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .pricing__card {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 4.8rem;
+
+    &--pro {
+      background-position: 210%;
+    }
+
+    .btn {
+      display: none;
+    }
+
+    .btn.is-tablet {
+      display: inline-block;
+    }
+
+    &-content {
+      flex: 1;
+    }
+
+    &-features {
+      flex: 1;
+    }
+
+    &-title {
+      margin-bottom: 1.6rem;
+    }
+
+    &-price {
+      margin-bottom: 0.4rem;
+    }
+
+    &-description {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      &::before {
+        background-position: 50% -10%;
+        background-size: 130rem;
+      }
+    }
+
+    &__intro {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .timer {
+    margin-bottom: 4.8rem;
+
+    &__card {
+      padding: 1.6rem;
+      border-radius: 1.3rem;
+    }
+    &__time {
+      font-size: 5.6rem;
+      line-height: 1.1;
+    }
+
+    &__description {
+      font-size: 1.6rem;
+    }
   }
 }
